@@ -24,11 +24,11 @@ The web application will freely navigate to every page that is available. There 
 
 There should be photos attached to the "assets" folder that says "Userflow.png", "Mural.png", and "Wireframe.png"
 
-I've done a google search for a parry trainers. I wasn't able to find the type of application that I am planning on developing. When researching, I ran into different forums where multiple people talked about how to parry on specific games.
+I've done a google search for a parry trainers. I wasn't able to find the type of application that I am planning on developing. When researching, I ran into different forums where multiple people talked about how to parry on specific games. I did not like how there isn't an application for training a users timing.
 
 https://www.reddit.com/r/darksouls3/comments/6p7fcs/parry_training/
 
-I did run into a for profit website that is a parry training platform.
+I did run into a for profit website that is a parry training platform. Unfortunately, I am not paying for this application, so I can not provide any details here.
 
 https://www.producthunt.com/products/coach-parry-training-platform
 
