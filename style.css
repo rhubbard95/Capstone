@@ -16,3 +16,20 @@ body{
   font
   margin-bottom: 5px;
 }
+
+.form {
+
+}
+.rating {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Gamename{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 375px) {
+
+}
