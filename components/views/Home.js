@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <body>
   <h1 id="Title">Rashad Hubbard</h1>
   <h2 class="Headers">A little about me</h2>
@@ -19,16 +16,3 @@
 
 
 </body>
-
-<footer>
-  <nav class="menu">
-
-      <a href="index.html">Home</a>
-      <a href="About.html">About Me</a>
-      <a href="Survey.html">Survey</a>
-
-  </nav>
-
-</footer>
-
-</html>
