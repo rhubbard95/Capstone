@@ -1,4 +1,4 @@
-import * as components from "./components";
+import { Head, Nav, Main, Footer } from "./components";
 import * as store from "./store";
 
 const router = new Navigo("/");
@@ -23,21 +23,13 @@ router
   })
   .resolve();
 
-function render(state = store.Home, router.updatePageLinks();) {
+function render(state = store.Home) {
   document.querySelector("#root").innerHTML = `
-      ${Head(State)}
-      ${Nav(store.Links)}
-      ${Main(state)}
-      ${Footer()}
+    ${Head(state)}
+    ${Nav(store.Links)}
+    ${Main(state)}
+    ${Footer()}
     `;
+  router.updatePageLinks();
+  render();
 }
-
-render();
-
-```javascript
-    ${links.map(
-      (link) =>
-        `<li><a href="/${link.title}"
-        title="${link.title}" data-navigo>${link.text}</a></li>`
-    ).join("")};
-```
