@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default state => html`
-  <body>
+  <section>
     <h1 id="Title">Rashad Hubbard</h1>
     <h2 class="Headers">A little about me</h2>
     <p>
@@ -26,5 +26,5 @@ export default state => html`
       time is important. Gaming examples will be something like the God of War
       series, Furi, Sifu, and plenty of other games.
     </p>
-  </body>
+  </section>
 `;

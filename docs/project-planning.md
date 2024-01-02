@@ -40,3 +40,6 @@ SWOT Analysis: There isn't a web application that I can find that is a parry/blo
 When looking for this information on search engines, it defaults to reddit pages or forums about challenging
 games that people need assistance with. Within these forums, people attempt to explain how to assist with particular enemies or
 generic game play.
+
+
+<!-- API Key: mYAGcfdFs74G -->
