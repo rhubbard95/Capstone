@@ -1,10 +1,10 @@
 import html from "html-literal";
 
 export default () => html`
-  <h1>Here is my contact page if you want to reach out.</h1>
-  <!-- <h3><a href="www.linkedin.com/in/rashad-hubbard-4a81b4b0">My LinkedIn</h3> -->
+  <h1 id="Title">Here is my contact page if you want to reach out.</h1>
+  <h3><a href="www.linkedin.com/in/rashad-hubbard-4a81b4b0">My LinkedIn<a> </h3>
 
-  <h2 class="About">A little more about me</h2>
+  <h2 class="Headers">A little more about me</h2>
 
   <section id="about me">
     <p>
