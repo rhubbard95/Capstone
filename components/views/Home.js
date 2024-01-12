@@ -5,9 +5,8 @@ export default state => html`
     <h1 id="Title">Rashad Hubbard</h1>
 
     <h3>
-      The weather in ${state.weather.city} is ${state.weather.description}.
-      Temperature is ${state.weather.temp}F, and it feels like
-      ${state.weather.feelsLike}F.
+      Here is a random fun fact! Make sure you check back daily to learn
+      something new while perfecting your timing! ${state.fact}
     </h3>
     <h2 class="Headers">A little about me</h2>
     <p>
