@@ -27,8 +27,148 @@ body{
 .Gamename{
   display: flex;
   justify-content: center;
+
+
 }
 
 @media (max-width: 375px) {
 }
 
+#Title {
+  color: purple;
+  text-align: center;
+  border: 2px solid rgba(207, 226, 255, 0.8);
+  background-color: rgba(207, 226, 255, 0.8);
+  border: 2px solid rgba(207, 226, 255, 0.8);
+background-color: rgba(207, 226, 255, 0.8);
+border-radius: 10px;
+
+}
+
+body{
+  background-color: #8ac4ff;
+}
+
+.Headers {
+  text-align: center;
+  color: blueviolet;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 375px) {
+}
+
+header{
+  border: 10px solid #111344;
+  border-radius: 25;
+  background-color: hsl(238, 60%, 17%);
+  color: #FEFFEA;
+}
+
+footer{
+  display: flex;
+  justify-content: sp;
+    position:fixed;
+    left:0fgmpx;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:#999;
+
+  justify-content: space-evenly;
+  border: 8px solid #111344;
+  background-color: #111344;
+  border-radius: 25;
+  color:#FEFFEA
+}
+
+a {
+  color: #FEFFEA;
+
+}
+
+@media (min-width: 550px) {
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 0.5rem 0.5rem;
+    border-radius: 25px;
+    background-color: #111344;
+  }
+
+  nav > .fa-bars {
+    display: none;
+  }
+
+#forecast {
+border: 3px solid;
+border-color: gray;
+border-radius: 25px;
+background-color: #cfe2ff;
+}
+
+
+
+#aboutme {
+  border: 2px solid rgba(207, 226, 255, 0.8);
+background-color: rgba(207, 226, 255, 0.8);
+}
+
+#whytrainer {
+  border: 2px solid rgba(207, 226, 255, 0.8);
+  background-color: rgba(207, 226, 255, 0.8);
+  border: 2px solid rgba(207, 226, 255, 0.8);
+background-color: rgba(207, 226, 255, 0.8);
+border-radius: 10px;
+}
+
+#survey {
+  border: 2px solid rgba(207, 226, 255, 0.8);
+  background-color: rgba(207, 226, 255, 0.8);
+  border: 2px solid rgba(207, 226, 255, 0.8);
+background-color: rgba(207, 226, 255, 0.8);
+border-radius: 10px;
+}
+
+#image {
+display: flex;
+justify-content: right !important;
+align-items: center;
+}
+
+#survey {
+text-align: center;
+}
+
+#linked {
+  text-align: center;
+  color: black;
+}
+.url {
+  color: black;
+}
+
+.url:hover {
+  border: 1px #111344;
+  background-color: #111344;
+  border-radius: 10px;
+  color: #FEFFEA;
+}
+
+.menu {
+  border: 1px #111344;
+  background-color: #111344;
+  border-radius: 10px;
+  color: #FEFFEA;
+}
