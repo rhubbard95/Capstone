@@ -27,7 +27,7 @@ export default () => html`
       <label
         ><input type="radio" name="radio" value="Satisfied" />Satisfied</label
       >
-      <label><input type="radio" name="radio" value="Neutral" />Neutral</label>
+      <label><input type="radio" name="radio" value="Neutral" required />Neutral</label>
       <label
         ><input
           type="radio"
@@ -40,6 +40,7 @@ export default () => html`
         Dissatisfied</label
       >
       <button type="submit">Send</button>
+
     </form>
     <section></section>
   </section>

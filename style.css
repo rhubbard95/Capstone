@@ -21,7 +21,7 @@ body{
 }
 .rating {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .Gamename{
@@ -188,5 +188,26 @@ input[type="submit" i] {
   border-width: 2px;
   border-style: outset;
   border-color: buttonborder;
-  border-image: initial;
+  border-image: initial;}
 
+  .cleanup {
+    border: 2px solid rgba(207, 226, 255, 0.8);
+    background-color: rgba(207, 226, 255, 0.8);
+    border: 2px solid rgba(207, 226, 255, 0.8);
+  background-color: rgba(207, 226, 255, 0.8);
+  border-radius: 10px;
+  }
+
+  .hidden--mobile nav-links:hover{
+    border: 2px solid rgba(207, 226, 255, 0.8);
+    background-color: rgba(207, 226, 255, 0.8);
+    border: 2px solid rgba(207, 226, 255, 0.8);
+  background-color: rgba(207, 226, 255, 0.8);
+  border-radius: 10px;
+  }
+
+  .bubbles:hover{
+    background-color: rgba(207, 226, 255, 0.8);
+border-radius: 3px;
+color: #111344;
+  }
