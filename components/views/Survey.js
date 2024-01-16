@@ -9,27 +9,19 @@ export default () => html`
   <section id="survey">
     <h2 id="surveyheader">A quick survey</h2>
 
-    <form
-      action="https://formspree.io/f/mvojebek"
-      method="post"
-      class="Gamename"
-    ></form>
-    <form class="Gamename">
-      <label for="game"
-        >Enter the game you're practicing the timing for:
+    <form action="https://formspree.io/f/mvojebek" method="post">
+      <label>
+        Enter the game you're practicing the timing for:
+        <input type="text" name="game" required />
       </label>
-      <input type="text" name="game" required />
+      <button type="submit">Send</button>
     </form>
 
     <h4>Underneath, feel free to rate the web application</h4>
-    <form
+
+    <form class="rating"
       action="https://formspree.io/f/mvojebek"
-      method="post"
-      class="rating"
-    ></form>
-    <form class="rating">
-      <label
-        ><input type="radio" name="radio" value="Very Satisfied" />Very
+      method="post"><input type="radio" name="radio" value="Very Satisfied" />Very
         Satisfied</label
       >
       <label
@@ -47,6 +39,7 @@ export default () => html`
         ><input type="radio" name="radio" value="Very Dissatisfied" />Very
         Dissatisfied</label
       >
+      <button type="submit">Send</button>
     </form>
     <section></section>
   </section>
