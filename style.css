@@ -34,7 +34,6 @@ body{
 @media (max-width: 375px) {
 }
 
-<<<<<<< HEAD
 #Title {
   color: purple;
   text-align: center;
@@ -63,8 +62,6 @@ body{
 @media (max-width: 375px) {
 }
 
-=======
->>>>>>> 41b1761b4bbf4dcc202719ca92c2ccb5049552a2
 header{
   border: 10px solid #111344;
   border-radius: 25;
@@ -74,7 +71,6 @@ header{
 
 footer{
   display: flex;
-<<<<<<< HEAD
   justify-content: sp;
     position:fixed;
     left:0fgmpx;
@@ -176,19 +172,3 @@ text-align: center;
   border-radius: 10px;
   color: #FEFFEA;
 }
-=======
-  justify-content: center;
-  border: 3px solid #111344;
-  background-color: #111344;
-  color:#FEFFEA
-}
-
-a.menu:link{
-  color:black;
-}
-
-a {
-  color: #FEFFEA;
-}
-
->>>>>>> 41b1761b4bbf4dcc202719ca92c2ccb5049552a2

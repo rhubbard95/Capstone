@@ -34,11 +34,21 @@ router.hooks({
     switch (view) {
       case "Home":
         axios
-          .get(`/api/v2/facts/today?language=en`)
+          .get(
+            `https://api.openweathermap.org/data/2.5/weather?appid=${process.env.OPEN_WEATHER_MAP_API_KEY}&q=st%20louis`
+          )
           .then(response => {
-            store.Home.fact = response.data},
+            const kelvinToFahrenheit = kelvinTemp =>
+              Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
+
+            store.Home.weather = {
+              city: response.data.name,
+              temp: kelvinToFahrenheit(response.data.main.temp),
+              feelsLike: kelvinToFahrenheit(response.data.main.feels_like),
+              description: response.data.weather[0].main
+            };
             done();
-    })
+          })
           .catch(err => {
             console.log(err);
             done();

@@ -5,16 +5,10 @@ export default state => html`
   <section>
     <h1 id="Title">Rashad Hubbard</h1>
 
-<<<<<<< HEAD
     <h3 id="forecast">
       The weather in ${state.weather.city} is ${state.weather.description}.
       Temperature is ${state.weather.temp}F, and it feels like
       ${state.weather.feelsLike}F.
-=======
-    <h3>
-      Here is a random fun fact! Make sure you check back daily to learn
-      something new while perfecting your timing! ${state.fact}
->>>>>>> 41b1761b4bbf4dcc202719ca92c2ccb5049552a2
     </h3>
     <h2 class="Headers">A little about me</h2>
     <p class="spacing">
