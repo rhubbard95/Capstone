@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import form from "./routers/form.js";
 
 dotenv.config();
 
@@ -100,3 +101,7 @@ app.get("/weather/:city", (request, response) => {
     city
   });
 });
+
+app.use("/form", form);
+
+app.listen(PORT, () => console.log("listening on port 4040"));
