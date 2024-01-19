@@ -45,7 +45,7 @@ export default () => html`
     <section></section>
   </section>
 
-  <form id="game" method="POST" action="">
+  <form id="form" method="POST" action="">
     <h2> Choose the game you've played <h2>
   <label for="games">Game:</label>
     <select id= "game" name="game">
