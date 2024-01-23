@@ -27,17 +27,17 @@ function afterRender(state) {
     document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
 
-      router.navigate("/Survey");
+      // router.navigate("/form");
       const inputList = event.target.elements;
       console.log("Input Element List", inputList);
       const requestData = { game: inputList.game.value };
       console.log("request Body", requestData);
 
       axios
-        .post(`${process.env.PARRY_TRAINER_SURVEY}/form`, requestData)
+        .post(`${process.env.FORMS_API_URL}/forms`, requestData)
         .then(response => {
-          store.Survey.form.push(response.data);
-          router.navigate("/form");
+          store.Survey.forms.push(response.data);
+          router.navigate("/About");
         })
         // If there is an error log it to the console
         .catch(error => {
@@ -81,10 +81,9 @@ router.hooks({
 
       case "Survey":
         axios
-          .get(`${process.env.PARRY_TRAINER_SURVEY}/form}`)
+          .get(`${process.env.PARRY_TRAINER_SURVEY}/forms}`)
           .then(response => {
-            console.log("response", response.data);
-            store.Survey.form = response.data;
+            store.Survey.forms = response.data;
             done();
           });
         break;
