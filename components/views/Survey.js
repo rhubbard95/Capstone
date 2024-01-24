@@ -9,7 +9,7 @@ export default () => html`
   <section id="survey">
     <h2 id="surveyheader">A quick survey</h2>
 
-    <form action="https://formspree.io/f/mvojebek" method="post">
+    <!-- <form action="https://formspree.io/f/mvojebek" method="post">
       <label>
         Enter the game you're practicing the timing for:
         <input type="text" name="game" required />
@@ -41,26 +41,28 @@ export default () => html`
       >
       <button type="submit">Send</button>
 
-    </form>
+    </form> -->
 
     <form id="form" method="POST" action="">
-    <h2>Choose the game you've played</h2>
-    <label for="games">Game:</label>
-    <select id="game" name="game">
-      <option value="">Select a game</option>
-      <option value="Lies of P">Lies of P</option>
-      <option value="Street Fighter 6">Street Fighter 6</option>
-      <option value="Sekiro: Shadows Die Twice">Sekiro: Shadows Die Twice</option>
-      <option value="Batman: Arkham Series">Batman: Arkham Series</option>
-      <option value="Ghost of Tsushima">Ghost of Tsushima</option>
-      <option value="Sleeping Dogs">Sleeping Dogs</option>
-      <option value="Mad Max">Mad Max</option>
-      <option value="God of War">God of War</option>
-      <option value="Star Wars Jedi: Fallen Order"
-        >Star Wars Jedi: Fallen Order</option
-      >
-    </select>
-    <button type="submit">Submit</button>
-  </form>
-
+      <h2>Choose the game you've played</h2>
+      <label for="games">Game:</label>
+      <select id="game" name="game">
+        <option value="">Select a game</option>
+        <option value="Lies of P">Lies of P</option>
+        <option value="Street Fighter 6">Street Fighter 6</option>
+        <option value="Sekiro: Shadows Die Twice"
+          >Sekiro: Shadows Die Twice</option
+        >
+        <option value="Batman: Arkham Series">Batman: Arkham Series</option>
+        <option value="Ghost of Tsushima">Ghost of Tsushima</option>
+        <option value="Sleeping Dogs">Sleeping Dogs</option>
+        <option value="Mad Max">Mad Max</option>
+        <option value="God of War">God of War</option>
+        <option value="Star Wars Jedi: Fallen Order"
+          >Star Wars Jedi: Fallen Order</option
+        >
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 `;

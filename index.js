@@ -86,12 +86,10 @@ router.hooks({
         break;
 
       case "Survey":
-        axios
-          .get(`${process.env.PARRY_TRAINER_SURVEY}/forms}`)
-          .then(response => {
-            store.About.forms = response.data;
-            done();
-          });
+        axios.get(`${process.env.FORMS_API_URL}/forms}`).then(response => {
+          store.About.forms = response.data;
+          done();
+        });
         break;
 
       default:
