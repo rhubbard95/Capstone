@@ -45,15 +45,12 @@ export default () => html`
 
     <form id="form" method="POST" action="">
     <h2>Choose the game you've played</h2>
-    <!-- Corrected closing tag -->
     <label for="games">Game:</label>
     <select id="game" name="game">
       <option value="">Select a game</option>
       <option value="Lies of P">Lies of P</option>
       <option value="Street Fighter 6">Street Fighter 6</option>
-      <option value="Sekiro: Shadows Die Twice"
-        >Sekiro: Shadows Die Twice</option
-      >
+      <option value="Sekiro: Shadows Die Twice">Sekiro: Shadows Die Twice</option>
       <option value="Batman: Arkham Series">Batman: Arkham Series</option>
       <option value="Ghost of Tsushima">Ghost of Tsushima</option>
       <option value="Sleeping Dogs">Sleeping Dogs</option>
@@ -64,6 +61,6 @@ export default () => html`
       >
     </select>
     <button type="submit">Submit</button>
-  </form>  </section>
+  </form>
 
 `;

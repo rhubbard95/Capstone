@@ -17,4 +17,18 @@ export default () => html`
     jumping back into creating content for myself along with seeing what cool
     web pages and applications that I can create.
   </p>
+
+  <!-- Need to work with this -->
+  <!-- <table id="pizzas">
+<tr><th>Crust</th><th>Cheese</th><th>Sauce</th><th>Toppings</th><th>Customer</th></tr>
+${state.pizzas
+    .map(pizza => {
+      return `<tr><td>${pizza.crust}</td><td>${pizza.cheese}</td><td>${
+        pizza.sauce
+      }</td><td>${pizza.toppings.join(" & ")}</td><td>${
+        pizza.customer
+      }</td></tr>`;
+    })
+    .join("")}
+</table> -->
 `;

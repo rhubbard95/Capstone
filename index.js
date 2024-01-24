@@ -4,6 +4,14 @@ import Navigo from "navigo";
 import { capitalize } from "lodash";
 import axios from "axios";
 
+let FORMS_API_URL;
+
+if (process.env.FORMS_API_URL) {
+  FORMS_API_URL = process.env.FORMS_API_URL || "http://localhost:4040";
+} else {
+  console.error("Please create the .env file with a value for FORMS_API_URL");
+}
+
 const router = new Navigo("/");
 
 function render(state = store.Home) {
@@ -27,16 +35,14 @@ function afterRender(state) {
     document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
 
-      // router.navigate("/form");
+      // router.navigate("/Survey");
       const inputList = event.target.elements;
-      console.log("Input Element List", inputList);
       const requestData = { game: inputList.game.value };
-      console.log("request Body", requestData);
 
       axios
-        .post(`${process.env.FORMS_API_URL}/forms`, requestData)
+        .post(`${FORMS_API_URL}/forms`, requestData)
         .then(response => {
-          store.Survey.forms.push(response.data);
+          store.About.forms.push(response.data);
           router.navigate("/About");
         })
         // If there is an error log it to the console
@@ -83,7 +89,7 @@ router.hooks({
         axios
           .get(`${process.env.PARRY_TRAINER_SURVEY}/forms}`)
           .then(response => {
-            store.Survey.forms = response.data;
+            store.About.forms = response.data;
             done();
           });
         break;
@@ -117,3 +123,5 @@ router
     }
   })
   .resolve();
+
+// corrected but my page still navigates to Survey?

@@ -1,4 +1,7 @@
 export default {
   header: "My About Page",
-  view: "About"
+  view: "About",
+  forms: []
 };
+
+// corrected

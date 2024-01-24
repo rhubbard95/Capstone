@@ -1,5 +1,6 @@
 export default {
   header: "My Survey Page",
-  view: "Survey",
-  form: []
+  view: "Survey"
 };
+
+// corrected
